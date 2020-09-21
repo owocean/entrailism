@@ -38,5 +38,5 @@ function begin(foldername,arg){
         let configtxt = require("./construct.js")(tmp,response,arg.name,bpm,isRandom);
         fs.writeFileSync("output/"+foldername+"/config.txt", JSON.stringify(configtxt));
         console.log("\nDone!");
-    });
+    }, (parseInt(arg.threshold)||110));
 }

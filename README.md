@@ -35,6 +35,7 @@ node index --music <filename>.wav --name MyMap --bpm 120
 ```
 `--difficulty` is optional. `easy`, `hard`, or `harder`  
 `--random` is optional. `true` or `false`  
+`--threshold` is optional. Defaults to `110`  
 Your map will output in the `output` folder  
 **NOTICE** The script uses `audiowaveform.exe` which is a *Windows* executable.  
 If you wish to use this on Linux/Mac, follow the build steps [here](https://github.com/bbc/audiowaveform)

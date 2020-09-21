@@ -17,7 +17,10 @@ set /p difficulty=
 echo.
 echo Random arc placement? (true or false)
 set /p random=
-node index.js --name %name% --music %music% --bpm %bpm% --difficulty %difficulty% --random %random%
+echo.
+echo Threshold (110 is ideal)
+set /p thresh=
+node index.js --name %name% --music %music% --bpm %bpm% --difficulty %difficulty% --random %random% --threshold %thresh%
 echo.
 pause
 exit
